@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
  "scripts": {
-    "tests": "playwright test",
-    "report": "playwright show-report"
+    "tests": "npx playwright test",
+    "test:specific": "npx playwright test --grep sep-login.test.js",
+    "test:tag":"npx playwright test --grep @group1",
+    "report": "npx playwright show-report"
   },
   "keywords": [],
   "author": "",
